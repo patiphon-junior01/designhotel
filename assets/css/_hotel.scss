@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap');
+
+
+html {
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  transition: all 0.1s ease-out;
+}
+
+/* width */
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 8px grey;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 8px rgb(27, 26, 26);
+  background: #636262;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #313030;
+}
+
+
+
+
+.d-inline {
+  display: inline;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.justify-content-end {
+  display: flex;
+  justify-content: end;
+}
+
+.justify-content-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-warp {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.li-header {
+  list-style: none;
+
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+
+.container {
+  padding: 15px;
+  max-width: 100%;
+  min-height: 100vh;
+
+  .box-detail {
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #fcf2c5;
+
+    p:nth-child(1) {
+      font-size: 105%;
+      font-weight: 600;
+    }
+  }
+
+  .box-bg {
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    background-image: url(../image/hotel.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    min-height: 750px;
+
+  }
+
+  .detail {
+    padding: 25px 0px;
+  }
+
+  .border-top {
+    border-top: 1px solid rgba(0, 0, 0, 0.187);
+  }
+
+  .border-bottom {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.187);
+  }
+}
+
+
+
+@media (max-width: 900px) {
+  .container {
+    .box-bg {
+      min-height: 650px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .d-flex {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    .box-bg {
+      background-size: cover;
+      min-height: 450px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    .box-bg {
+      min-height: 400px;
+    }
+  }
+}
